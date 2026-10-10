@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Dachdeckerbetrieb Holger Weiß | Meisterbetrieb Zeuthen & Eichwalde</title>
-  <meta name="description" content="Offizieller Meisterbetrieb Holger Weiß in Zeuthen. Dacheindeckung, Dachfenster, Bauklempnerei & 24h Sturmschaden-Notdienst. Festpreisgarantie & kostenlose Erstberatung.">
+  <meta name="description" content="Inhabergeführter Dachdeckermeisterbetrieb Holger Weiß in Zeuthen. Steildach, Flachdach, Velux-Dachfenster, Bauklempnerei & 24h Sturmschaden-Notdienst. Verbindliche Festpreise.">
   
-  <!-- Premium Typography: Outfit + Plus Jakarta Sans -->
+  <!-- Premium Editorial Typography: Outfit + Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,16 +23,14 @@
           },
           colors: {
             brand: {
-              slate: '#0F172A',
-              slateDark: '#0B0F17',
-              slateMuted: '#334155',
-              amber: '#D97706',
-              amberLight: '#F59E0B',
-              amberDark: '#B45309',
-              lightBg: '#F8FAFC',
+              charcoal: '#0F172A',
+              obsidian: '#0B0F17',
+              ochre: '#C25E2E',
+              ochreHover: '#A84C20',
+              ochreLight: '#FDF4EF',
+              warmWhite: '#FAFAF9',
               border: '#E2E8F0',
-              textMain: '#0F172A',
-              textMuted: '#64748B'
+              muted: '#64748B'
             }
           }
         }
@@ -41,16 +39,18 @@
   </script>
 
   <style>
-    /* UI/UX PRO MAX DESIGN SYSTEM */
+    /* TASTE SKILL & IMPECCABLE CRAFT FLOOR */
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FAFAF9;
+      color: #0F172A;
       max-width: 100%;
       overflow-x: hidden;
       position: relative;
     }
     h1, h2, h3, h4, .font-heading {
       font-family: 'Outfit', sans-serif;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.03em;
     }
     *, *::before, *::after {
       box-sizing: border-box;
@@ -58,20 +58,24 @@
     p, h1, h2, h3, h4, span, a, label {
       overflow-wrap: break-word;
       word-break: break-word;
-      hyphens: auto;
+    }
+    /* Brand Themed Selection */
+    ::selection {
+      background-color: #C25E2E;
+      color: #FFFFFF;
     }
     /* WCAG Focus Ring */
     :focus-visible {
-      outline: 3px solid #D97706;
+      outline: 2px solid #C25E2E;
       outline-offset: 3px;
     }
     .skip-link {
       position: absolute;
       top: -60px;
       left: 16px;
-      background: #D97706;
+      background: #C25E2E;
       color: #FFFFFF;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border-radius: 8px;
       font-weight: 600;
       z-index: 100;
@@ -80,49 +84,56 @@
     .skip-link:focus {
       top: 16px;
     }
-    /* Prevent iOS auto-zoom on input focus */
+    /* Emil Kowalski Tactile Buttons & Surfaces */
+    .tactile-btn {
+      transition: transform 140ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 140ms ease, background-color 140ms ease;
+    }
+    .tactile-btn:hover {
+      transform: translateY(-1px);
+    }
+    .tactile-btn:active {
+      transform: scale(0.975);
+    }
+    /* Subtle 1px borders with ambient depth */
+    .craft-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 10px 20px -5px rgba(0, 0, 0, 0.03);
+      transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms ease;
+    }
+    .craft-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 20px 30px -10px rgba(0, 0, 0, 0.06);
+    }
     input, textarea, select {
       font-size: 16px !important;
     }
-    ::selection {
-      background-color: #D97706;
-      color: #FFFFFF;
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(226, 232, 240, 0.8);
-    }
-    .hero-glow {
-      background: radial-gradient(circle at 50% 30%, rgba(217, 119, 6, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
-    }
   </style>
 </head>
-<body class="bg-brand-lightBg text-brand-textMain antialiased flex flex-col min-h-screen pb-24 sm:pb-0">
+<body class="antialiased flex flex-col min-h-screen pb-24 sm:pb-0">
   
-  <!-- Accessibility Skip Link -->
   <a href="#main" class="skip-link">Direkt zum Hauptinhalt</a>
 
-  <!-- TOPBAR -->
-  <aside class="bg-brand-slateDark text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-3">
+  <!-- TOP TRUST STRIP -->
+  <aside class="bg-brand-charcoal text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-3">
       <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 text-slate-300">
+        <span class="inline-flex items-center gap-1.5 text-slate-300 font-medium">
           <svg class="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           Miersdorfer Chaussee 10, 15738 Zeuthen
         </span>
-        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:inline text-slate-600">•</span>
         <span class="hidden md:inline text-slate-400">
-          Dachdeckermeisterbetrieb seit 1990
+          Innungsbetrieb der Handwerkskammer Potsdam • Gegründet 1990
         </span>
       </div>
       <div class="flex items-center gap-4 font-medium">
-        <a href="tel:03034622646" class="hover:text-white transition flex items-center gap-1.5 min-h-[44px] py-1" aria-label="Festnetz anrufen: 030 34 622 646">
+        <a href="tel:03034622646" class="hover:text-white transition flex items-center gap-1.5 min-h-[44px] py-1" aria-label="Büro anrufen">
           <svg class="w-3.5 h-3.5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           030 34 622 646
         </a>
         <span class="text-slate-700">|</span>
-        <a href="tel:01732354958" class="text-amber-400 hover:text-amber-300 transition flex items-center gap-1.5 min-h-[44px] py-1 font-semibold" aria-label="Mobil oder Notdienst: 0173 235 49 58">
+        <a href="tel:01732354958" class="text-amber-400 hover:text-amber-300 transition flex items-center gap-1.5 min-h-[44px] py-1 font-semibold" aria-label="24h Notdienst anrufen">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
@@ -133,318 +144,530 @@
     </div>
   </aside>
 
-  <!-- NAVIGATION -->
-  <header class="bg-white/95 backdrop-blur-md border-b border-brand-border sticky top-0 z-30 shadow-sm" aria-label="Hauptnavigation">
-    <div class="max-w-6xl mx-auto px-4 py-3.5 flex justify-between items-center">
-      <a href="#" class="flex items-center gap-3.5 group" aria-label="Holger Weiß Startseite">
-        <div class="h-12 px-2.5 py-1 bg-white rounded-xl border border-slate-200 shadow-sm flex items-center justify-center group-hover:scale-105 transition duration-200">
-          <img src="./logo.jpg" alt="Dachdeckerbetrieb Holger Weiß Meister-Emblem" class="h-10 w-auto max-h-10 object-contain" width="70" height="38">
+  <!-- FLOATING BESPOKE NAVIGATION -->
+  <header class="sticky top-2 z-40 px-3 sm:px-6">
+    <div class="max-w-7xl mx-auto bg-white/90 backdrop-blur-md rounded-2xl border border-slate-200/90 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] px-4 py-3 flex justify-between items-center">
+      
+      <a href="#" class="flex items-center gap-3 group" aria-label="Holger Weiß Startseite">
+        <div class="h-11 px-2 py-0.5 bg-white rounded-xl border border-slate-200/90 shadow-xs flex items-center justify-center group-hover:scale-102 transition duration-150">
+          <img src="./logo.jpg" alt="Dachdeckerbetrieb Holger Weiß Logo" class="h-9 w-auto max-h-9 object-contain" width="65" height="36">
         </div>
         <div>
-          <span class="font-heading font-extrabold text-lg text-brand-slate block leading-none tracking-tight">HOLGER WEISS</span>
-          <span class="text-[11px] text-brand-textMuted uppercase tracking-widest block font-semibold mt-1">Dachdeckermeister • Zeuthen</span>
+          <span class="font-heading font-extrabold text-base sm:text-lg text-brand-charcoal block leading-tight">HOLGER WEISS</span>
+          <span class="text-[10px] text-brand-muted uppercase tracking-wider block font-semibold">Dachdeckermeisterbetrieb • Zeuthen</span>
         </div>
       </a>
-      
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
-        <a href="#leistungen" class="hover:text-amber-700 transition">Leistungen</a>
-        <a href="#vorteile" class="hover:text-amber-700 transition">Warum wir</a>
-        <a href="#ablauf" class="hover:text-amber-700 transition">Ablauf</a>
-        <a href="#kontakt" class="hover:text-amber-700 transition">Kontakt</a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#leistungen" class="hover:text-brand-ochre transition">Leistungen</a>
+        <a href="#philosophie" class="hover:text-brand-ochre transition">Meisterqualität</a>
+        <a href="#projekte" class="hover:text-brand-ochre transition">Referenzen</a>
+        <a href="#kalkulator" class="hover:text-brand-ochre transition">Kostenschätzung</a>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <a href="#kontakt" class="bg-amber-600 hover:bg-amber-700 active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-sm hover:shadow transition duration-200 min-h-[48px] inline-flex items-center justify-center gap-2">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-          Angebot anfordern
+      <div class="flex items-center gap-2.5">
+        <a href="https://wa.me/491732354958?text=Hallo%20Herr%20Weiß,%20ich%20interessiere%20mich%20für%20eine%20Dachberatung." target="_blank" rel="noopener noreferrer" class="tactile-btn hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 min-h-[42px]">
+          <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp
+        </a>
+        <a href="#kalkulator" class="tactile-btn bg-brand-charcoal hover:bg-black text-white px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-sm inline-flex items-center gap-2 min-h-[42px]">
+          <span>Vor-Ort-Besichtigung</span>
+          <svg class="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
+
     </div>
   </header>
 
   <main id="main" class="flex-grow">
     
-    <!-- HERO SECTION -->
-    <section class="bg-brand-slateDark text-white py-16 sm:py-24 px-4 relative overflow-hidden hero-glow">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+    <!-- EDITORIAL HERO SECTION -->
+    <section class="pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <!-- LEFT: Architectural Editorial Copy -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="inline-flex items-center gap-2.5 bg-brand-ochreLight border border-brand-ochre/20 px-3.5 py-1.5 rounded-full text-xs font-semibold text-brand-ochre">
+              <span class="w-2 h-2 rounded-full bg-brand-ochre"></span>
+              Zertifizierter Innungsbetrieb in Zeuthen & Eichwalde
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-brand-charcoal leading-[1.04] tracking-tight">
+              Dächer für Generationen. <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-ochre to-amber-600">Meisterliche Handwerkskunst.</span>
+            </h1>
+
+            <p class="text-slate-600 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl font-normal">
+              Seit über 30 Jahren schützen wir private und gewerbliche Immobilien im Dahme-Spreewald. Von der energetischen Dachsanierung bis zur maßgefertigten Bauklempnerei – mit verbindlicher Festpreisgarantie und persönlicher Betreuung durch Dachdeckermeister Holger Weiß.
+            </p>
+
+            <!-- CALL TO ACTIONS -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-2">
+              <a href="#kalkulator" class="tactile-btn bg-brand-ochre hover:bg-brand-ochreHover text-white font-bold px-6 py-3.5 rounded-xl shadow-md inline-flex items-center gap-2.5 min-h-[48px]">
+                <span>Kostenlose Dachprüfung anfragen</span>
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a href="tel:01732354958" class="tactile-btn bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold px-5 py-3.5 rounded-xl shadow-xs inline-flex items-center gap-2.5 min-h-[48px]">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>24h Notdienst: 0173 235 49 58</span>
+              </a>
+            </div>
+
+            <!-- TRUST KEY METRICS -->
+            <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-200 max-w-xl">
+              <div>
+                <span class="block font-heading font-extrabold text-brand-charcoal text-2xl sm:text-3xl tracking-tight">35+ Jahre</span>
+                <span class="text-xs text-slate-500 font-medium">Familientradition</span>
+              </div>
+              <div>
+                <span class="block font-heading font-extrabold text-brand-charcoal text-2xl sm:text-3xl tracking-tight">100 %</span>
+                <span class="text-xs text-slate-500 font-medium">Festpreisgarantie VOB</span>
+              </div>
+              <div>
+                <span class="block font-heading font-extrabold text-brand-charcoal text-2xl sm:text-3xl tracking-tight">500+</span>
+                <span class="text-xs text-slate-500 font-medium">Realisierte Projekte</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Layered Architectural Visual Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-white p-2">
+              <div class="relative h-[380px] sm:h-[460px] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Exklusive Dacheindeckung Meisterarbeit" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                <!-- Floating Official Seal Badge -->
+                <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md rounded-2xl p-2.5 border border-slate-200/80 shadow-md flex items-center gap-2.5">
+                  <img src="./logo.jpg" alt="Meister-Logo" class="h-8 w-auto object-contain">
+                  <div class="pr-1">
+                    <span class="block text-[11px] font-extrabold text-slate-900 leading-tight">HOLGER WEISS</span>
+                    <span class="block text-[9px] font-semibold text-slate-500 uppercase">Meisterbrief • Zeuthen</span>
+                  </div>
+                </div>
+
+                <!-- Floating Live Dispatch Badge -->
+                <div class="absolute bottom-4 left-4 right-4 bg-brand-charcoal/90 backdrop-blur-md rounded-xl p-3.5 border border-white/10 text-white flex items-center justify-between">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold">Vor-Ort-Termine diese Woche verfügbar</span>
+                  </div>
+                  <a href="#kalkulator" class="text-xs font-bold text-amber-400 hover:text-amber-300 underline underline-offset-4">Anfragen →</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Soft Ambient Background Glow -->
+            <div class="absolute -top-10 -right-10 w-72 h-72 bg-brand-ochre/10 rounded-full blur-3xl pointer-events-none"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BENTO GRID SHOWCASE (TASTE-SKILL STANDARD) -->
+    <section id="leistungen" class="py-16 sm:py-24 bg-white border-y border-slate-200/80 px-4">
+      <div class="max-w-7xl mx-auto space-y-12">
         
-        <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2.5 bg-amber-500/10 border border-amber-500/30 px-3.5 py-1.5 rounded-full text-xs font-semibold text-amber-300">
-            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-            Sturmschaden- & Notdienst einsatzbereit in Dahme-Spreewald
-          </div>
-
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight">
-            Ihr Dach in meisterhaften Händen – <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">sicher, dicht & langlebig.</span>
-          </h1>
-
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl">
-            Als inhabergeführter Meisterbetrieb in Zeuthen garantieren wir handwerkliche Spitzenqualität, verbindliche Festpreise nach VOB/BGB und pünktliche Fertigstellung für Ihr Zuhause.
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold text-brand-ochre uppercase tracking-wider block mb-2">Geprüfte Fachleistungen</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-charcoal tracking-tight">
+            Handwerkliche Präzision für jede Dachform.
+          </h2>
+          <p class="text-slate-600 text-base mt-3">
+            Ob Neubau, historische Denkmalsanierung oder sturmsichere Abdichtung: Wir setzen auf zertifizierte Markenmaterialien von Braas, Rheinzink und Velux.
           </p>
-
-          <!-- DESKTOP CTAs -->
-          <div class="hidden sm:flex flex-wrap gap-4 pt-2">
-            <a href="tel:03034622646" class="bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition duration-200 inline-flex items-center gap-2.5 min-h-[48px]">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              Jetzt anrufen: 030 34 622 646
-            </a>
-            <a href="https://wa.me/491732354958?text=Hallo%20Herr%20Weiß,%20ich%20interessiere%20mich%20für%20eine%20Dachberatung." target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold px-6 py-3.5 rounded-xl shadow transition duration-200 inline-flex items-center gap-2.5 min-h-[48px]">
-              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-              WhatsApp Sofortkontakt
-            </a>
-          </div>
-
-          <!-- TRUST BADGES -->
-          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
-            <div>
-              <span class="block font-heading font-extrabold text-white text-lg sm:text-xl">35+ Jahre</span>
-              Meisterliche Erfahrung
-            </div>
-            <div>
-              <span class="block font-heading font-extrabold text-white text-lg sm:text-xl">100 %</span>
-              Festpreisgarantie
-            </div>
-            <div>
-              <span class="block font-heading font-extrabold text-white text-lg sm:text-xl">Vor Ort</span>
-              Zeuthen & Eichwalde
-            </div>
-          </div>
         </div>
 
-        <!-- QUICK CONVERSION FORM (Funnel Step 1) -->
-        <div id="kontakt" class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 text-brand-slate shadow-2xl border border-slate-100 relative">
-          <div class="mb-5">
-            <span class="inline-block bg-amber-100 text-amber-800 px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider mb-1">
-              Kostenloses Angebot
-            </span>
-            <h2 class="text-xl sm:text-2xl font-extrabold text-brand-slate">Projekt unverbindlich anfragen</h2>
-            <p class="text-xs text-brand-textMuted mt-1">Holger Weiß meldet sich werktags innerhalb von 24 Stunden bei Ihnen.</p>
+        <!-- ASYMMETRIC BENTO GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <!-- BENTO 1: Steildach & Ziegel (Hero Tile, 8 Cols) -->
+          <div class="md:col-span-8 craft-card rounded-3xl overflow-hidden p-6 sm:p-8 flex flex-col justify-between relative group">
+            <div class="relative z-10 max-w-xl space-y-4">
+              <span class="inline-block bg-brand-ochreLight text-brand-ochre px-3 py-1 rounded-full text-xs font-bold">
+                Kernkompetenz
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-charcoal">
+                Steildacheindeckung & energetische Sanierung
+              </h3>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Verlegung von Tonziegeln, Betondachsteinen und Naturschiefer nach den Fachregeln des Deutschen Dachdeckerhandwerks. Inklusive hochwirksamer Aufsparrendämmung (GEG-konform) zur Senkung Ihrer Energiekosten um bis zu 30 %.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-semibold text-slate-700">Braas Premium-Partner</span>
+                <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-semibold text-slate-700">Naturschiefer</span>
+                <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-xs font-semibold text-slate-700">KfW-Förderfähig</span>
+              </div>
+            </div>
+            
+            <div class="mt-8 rounded-2xl overflow-hidden h-56 sm:h-64 border border-slate-200">
+              <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80" alt="Steildach Sanierung" class="w-full h-full object-cover group-hover:scale-103 transition duration-300">
+            </div>
           </div>
 
-          <form onsubmit="event.preventDefault(); alert('Vielen Dank! Ihre Anfrage an Dachdeckermeister Holger Weiß wurde erfolgreich übermittelt.');" class="space-y-4">
-            <div>
-              <label for="f-name" class="block text-xs font-bold text-slate-700 mb-1">Vollständiger Name *</label>
-              <div class="relative">
-                <input id="f-name" type="text" required autocomplete="name" placeholder="z. B. Thomas Müller" class="w-full pl-3.5 pr-3 py-3 border border-slate-300 rounded-xl text-sm focus:border-amber-600 focus:ring-2 focus:ring-amber-500/20 transition min-h-[48px]">
+          <!-- BENTO 2: 24h Sturmschaden & Notdienst (4 Cols) -->
+          <div class="md:col-span-4 bg-brand-charcoal text-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800 shadow-xl relative overflow-hidden">
+            <div class="space-y-4 relative z-10">
+              <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full text-xs font-bold border border-amber-500/30">
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                24/7 Notfall-Einsatz
               </div>
+              <h3 class="text-2xl font-extrabold text-white">
+                Akuter Sturmschaden & Wassereinbruch
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Schnelle Notsicherung innerhalb von Stunden in Zeuthen, Eichwalde, Schulzendorf und Königs Wusterhausen. Dokumentation direkt für Ihre Wohngebäudeversicherung.
+              </p>
             </div>
 
-            <div>
-              <label for="f-phone" class="block text-xs font-bold text-slate-700 mb-1">Telefonnummer für Rückfragen *</label>
-              <div class="relative">
-                <input id="f-phone" type="tel" inputmode="tel" required autocomplete="tel" placeholder="z. B. 0170 1234567" class="w-full pl-3.5 pr-3 py-3 border border-slate-300 rounded-xl text-sm focus:border-amber-600 focus:ring-2 focus:ring-amber-500/20 transition min-h-[48px]">
-              </div>
+            <div class="pt-8 relative z-10">
+              <a href="tel:01732354958" class="tactile-btn w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-3.5 px-4 rounded-xl text-center block text-sm shadow-md">
+                📞 0173 235 49 58 anrufen
+              </a>
+              <span class="block text-center text-[11px] text-slate-400 mt-2">Auch an Sonn- und Feiertagen erreichbar</span>
             </div>
 
-            <div>
-              <label for="f-service" class="block text-xs font-bold text-slate-700 mb-1">Art des Vorhabens</label>
-              <select id="f-service" class="w-full px-3 py-3 border border-slate-300 rounded-xl text-sm focus:border-amber-600 focus:ring-2 focus:ring-amber-500/20 transition min-h-[48px] bg-white text-slate-800">
-                <option value="neueindeckung">Steildach / Ziegeleindeckung</option>
-                <option value="reparatur">Dachreparatur / Ausbesserung</option>
-                <option value="sturmschaden">Akuter Sturmschaden / Notfall</option>
-                <option value="flachdach">Flachdach / Abdichtung</option>
-                <option value="klempner">Dachrinne & Bauklempnerei</option>
-                <option value="sonstiges">Sonstiges Vorhaben</option>
-              </select>
-            </div>
+            <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+          </div>
 
-            <div>
-              <label for="f-msg" class="block text-xs font-bold text-slate-700 mb-1">Projektbeschreibung (optional)</label>
-              <textarea id="f-msg" rows="2" placeholder="Ortsteil, geschätzte Fläche oder Besonderheiten..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:border-amber-600 focus:ring-2 focus:ring-amber-500/20 transition min-h-[64px]"></textarea>
+          <!-- BENTO 3: Flachdach & Abdichtung (4 Cols) -->
+          <div class="md:col-span-4 craft-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">
+              Flachdach
+            </span>
+            <h3 class="text-xl font-extrabold text-brand-charcoal">
+              Flachdach- & Balkonabdichtung
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Dauerhafter Schutz für Garagen, Anbauten und Terrassen mit hochwertigen Bitumen-Schweißbahnen und Flüssigkunststoff-Verbundsystemen.
+            </p>
+            <div class="rounded-xl overflow-hidden h-36 border border-slate-200 mt-4">
+              <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=1200&q=80" alt="Flachdach Abdichtung" class="w-full h-full object-cover">
             </div>
+          </div>
 
-            <div class="flex items-start gap-2.5 pt-1">
-              <input type="checkbox" id="f-consent" required class="mt-1 w-5 h-5 text-amber-600 rounded border-slate-300 focus:ring-amber-500 cursor-pointer">
-              <label for="f-consent" class="text-xs text-slate-600 leading-snug cursor-pointer">
-                Ich stimme der Datenverarbeitung zur Kontaktaufnahme gemäß <a href="#datenschutz" class="text-amber-700 underline font-semibold">Datenschutzerklärung</a> zu. *
+          <!-- BENTO 4: Bauklempnerei & Zink (4 Cols) -->
+          <div class="md:col-span-4 craft-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">
+              Eigene Werkstatt
+            </span>
+            <h3 class="text-xl font-extrabold text-brand-charcoal">
+              Bauklempnerei & Zinkrinnen
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Maßgefertigte Dachentwässerung, Kaminbekleidungen, Mauerabdeckungen und Stehfalztechnik aus Titanzink, Kupfer und Aluminium.
+            </p>
+            <div class="rounded-xl overflow-hidden h-36 border border-slate-200 mt-4">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Bauklempnerei Zinkarbeit" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <!-- BENTO 5: Velux Dachfenster (4 Cols) -->
+          <div class="md:col-span-4 craft-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <span class="inline-block bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">
+              Velux Partner
+            </span>
+            <h3 class="text-xl font-extrabold text-brand-charcoal">
+              Dachfenster & Gaubenbau
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Austausch und Neueinbau von Velux-Dachfenstern in der Regel innerhalb eines einzigen Arbeitstages – absolut regensicher und wärmeoptimiert.
+            </p>
+            <div class="rounded-xl overflow-hidden h-36 border border-slate-200 mt-4">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Dachfenster Einbau" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUALITÄTS-VERSPRECHEN & MEISTER-STANDARDS -->
+    <section id="philosophie" class="py-16 sm:py-24 px-4 bg-brand-warmWhite">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs font-bold text-brand-ochre uppercase tracking-wider block">Verlässlichkeit & Ehre</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-charcoal tracking-tight">
+            Warum Hausbesitzer auf Holger Weiß vertrauen.
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Bei uns gibt es keine anonymen Callcenter oder wechselnde Subunternehmer. Sie sprechen von Tag eins direkt mit dem Meister.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="craft-card rounded-2xl p-6 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-ochreLight flex items-center justify-center text-brand-ochre font-bold text-lg">01</div>
+            <h4 class="font-extrabold text-lg text-brand-charcoal">Fester Ansprechpartner</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Dachdeckermeister Holger Weiß begleitet Ihre Baustelle persönlich von der Erstbesichtigung bis zur Abnahme.</p>
+          </div>
+          <div class="craft-card rounded-2xl p-6 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-ochreLight flex items-center justify-center text-brand-ochre font-bold text-lg">02</div>
+            <h4 class="font-extrabold text-lg text-brand-charcoal">Keine bösen Überraschungen</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Detaillierte, transparente Kostenvoranschläge nach VOB mit Festpreisgarantie – ohne Nachforderungen.</p>
+          </div>
+          <div class="craft-card rounded-2xl p-6 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-ochreLight flex items-center justify-center text-brand-ochre font-bold text-lg">03</div>
+            <h4 class="font-extrabold text-lg text-brand-charcoal">Eigene Stammbelegschaft</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Gelernte Fachdachdecker und Bauklempner aus der Region. Wir schätzen saubere, besenreine Baustellen.</p>
+          </div>
+          <div class="craft-card rounded-2xl p-6 space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-ochreLight flex items-center justify-center text-brand-ochre font-bold text-lg">04</div>
+            <h4 class="font-extrabold text-lg text-brand-charcoal">5 Jahre Gewährleistung</h4>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Vollumfängliche Garantie nach BGB auf alle ausgeführten Arbeiten und zertifizierte Industriematerialien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERAKTIVER PROJEKT-KALKULATOR & SCHNELLANFRAGE -->
+    <section id="kalkulator" class="py-16 sm:py-24 bg-white border-t border-slate-200/80 px-4">
+      <div class="max-w-4xl mx-auto craft-card rounded-3xl p-6 sm:p-12 shadow-2xl relative overflow-hidden">
+        
+        <div class="max-w-xl mx-auto text-center space-y-3 mb-8">
+          <span class="inline-block bg-brand-ochreLight text-brand-ochre px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+            Unverbindliche Kostenprüfung
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-brand-charcoal">
+            Projekt anfragen & Richtwert erhalten
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm">
+            Wählen Sie Ihr Vorhaben. Meister Holger Weiß prüft die Machbarkeit und meldet sich innerhalb von 24 Stunden persönlich.
+          </p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); document.getElementById('calc-success').classList.remove('hidden');" class="space-y-6">
+          
+          <!-- SCHRITT 1: Art des Vorhabens -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">1. Was möchten Sie umsetzen?</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+              <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:border-brand-ochre hover:bg-brand-ochreLight transition text-xs font-semibold flex flex-col items-center gap-1.5 has-[:checked]:border-brand-ochre has-[:checked]:bg-brand-ochreLight">
+                <input type="radio" name="vorhaben" value="steildach" checked class="sr-only">
+                <span>🏠 Steildach</span>
+              </label>
+              <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:border-brand-ochre hover:bg-brand-ochreLight transition text-xs font-semibold flex flex-col items-center gap-1.5 has-[:checked]:border-brand-ochre has-[:checked]:bg-brand-ochreLight">
+                <input type="radio" name="vorhaben" value="flachdach" class="sr-only">
+                <span>🏢 Flachdach</span>
+              </label>
+              <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:border-brand-ochre hover:bg-brand-ochreLight transition text-xs font-semibold flex flex-col items-center gap-1.5 has-[:checked]:border-brand-ochre has-[:checked]:bg-brand-ochreLight">
+                <input type="radio" name="vorhaben" value="fenster" class="sr-only">
+                <span>🪟 Velux-Fenster</span>
+              </label>
+              <label class="border border-slate-200 rounded-xl p-3 text-center cursor-pointer hover:border-brand-ochre hover:bg-brand-ochreLight transition text-xs font-semibold flex flex-col items-center gap-1.5 has-[:checked]:border-brand-ochre has-[:checked]:bg-brand-ochreLight">
+                <input type="radio" name="vorhaben" value="reparatur" class="sr-only">
+                <span>⚡ Reparatur / Not</span>
               </label>
             </div>
+          </div>
 
-            <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 active:scale-[0.98] text-white font-extrabold py-3.5 px-4 rounded-xl text-sm transition duration-200 shadow-md hover:shadow-lg min-h-[48px] flex items-center justify-center gap-2 cursor-pointer">
-              <span>Kostenloses Angebot anfordern</span>
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </button>
-          </form>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- BENTO GRID: LEISTUNGEN -->
-    <section id="leistungen" class="py-20 px-4 max-w-6xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-2">Unser Handwerk</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate">Maßgeschneiderte Dacharbeiten für Generationen</h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-3">Von traditioneller Biberschwanzeindeckung bis zu modernen Hightech-Abdichtungen – präzise, langlebig und windfest.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- CARD 1 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <!-- SCHRITT 2: Kontaktdaten -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="c-name" class="block text-xs font-bold text-slate-700 mb-1">Ihr Name *</label>
+              <input id="c-name" type="text" required placeholder="z. B. Thomas Meier" class="w-full px-3.5 py-3 border border-slate-300 rounded-xl text-sm focus:border-brand-ochre focus:ring-2 focus:ring-brand-ochre/20 transition min-h-[46px]">
             </div>
-            <h3 class="font-extrabold text-lg text-brand-slate mb-2">Steildach & Ziegeleindeckung</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Tonziegel, Betondachsteine und Naturschiefer. Wärmeisolierung nach modernstem Gebäudeenergiegesetz (GEG).</p>
-          </div>
-          <span class="text-amber-600 font-bold text-xs mt-4 inline-flex items-center gap-1">Fachgerechte Verlegung →</span>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <div>
+              <label for="c-phone" class="block text-xs font-bold text-slate-700 mb-1">Rückruf-Telefonnummer *</label>
+              <input id="c-phone" type="tel" inputmode="tel" required placeholder="z. B. 0171 1234567" class="w-full px-3.5 py-3 border border-slate-300 rounded-xl text-sm focus:border-brand-ochre focus:ring-2 focus:ring-brand-ochre/20 transition min-h-[46px]">
             </div>
-            <h3 class="font-extrabold text-lg text-brand-slate mb-2">Flachdach & Abdichtung</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Hochwertige Bitumenbahnen und nahtlose Flüssigkunststoff-Abdichtung für Garagen, Anbauten und Wohngebäude.</p>
           </div>
-          <span class="text-amber-600 font-bold text-xs mt-4 inline-flex items-center gap-1">Dauerhaft dicht →</span>
-        </div>
 
-        <!-- CARD 3 -->
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-            </div>
-            <h3 class="font-extrabold text-lg text-brand-slate mb-2">Bauklempnerei & Zinkarbeiten</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Dachrinnen, Fallrohre, Kaminverkleidungen und Wandanschlüsse aus Zink und Kupfer nach Maß gefertigt.</p>
-          </div>
-          <span class="text-amber-600 font-bold text-xs mt-4 inline-flex items-center gap-1">Präzisionsfertigung →</span>
-        </div>
-
-        <!-- CARD 4: NOTDIENST -->
-        <div class="bg-gradient-to-br from-amber-600 to-amber-700 text-white p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-200 flex flex-col justify-between">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-white/20 text-white flex items-center justify-center mb-5">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </div>
-            <h3 class="font-extrabold text-lg text-white mb-2">24h Sturmschaden-Soforthilfe</h3>
-            <p class="text-xs text-amber-100 leading-relaxed">Schnelle Not-Eindeckung bei Unwetter, herabgefallenen Ziegeln oder Wassereinbruch. Direkte Dokumentation für die Versicherung.</p>
-          </div>
-          <a href="tel:01732354958" class="bg-white text-amber-800 font-extrabold text-xs py-2 px-3 rounded-lg text-center mt-4 shadow hover:bg-amber-50 transition">
-            🚨 Notruf: 0173 235 49 58
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3-STEP PROCESS (Funnel UX Pattern) -->
-    <section id="ablauf" class="bg-slate-100/70 py-16 px-4 border-y border-slate-200">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center max-w-xl mx-auto mb-12">
-          <span class="text-amber-600 font-bold text-xs uppercase tracking-widest block mb-1">Einfach & Zuverlässig</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-slate">In 3 Schritten zu Ihrem sicheren Dach</h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
-            <span class="absolute -top-3.5 left-6 bg-brand-slate text-amber-400 font-extrabold text-xs px-3 py-1 rounded-full border border-slate-700">Schritt 1</span>
-            <h3 class="font-bold text-base text-brand-slate mt-2 mb-2">Vor-Ort-Besichtigung & Analyse</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Holger Weiß begutachtet die Bausubstanz Ihres Daches persönlich vor Ort in Zeuthen, Eichwalde oder Umgebung.</p>
+            <label for="c-address" class="block text-xs font-bold text-slate-700 mb-1">Ort des Objekts (z. B. Zeuthen, Eichwalde, Schulzendorf)</label>
+            <input id="c-address" type="text" placeholder="Straße oder Ortsteil" class="w-full px-3.5 py-3 border border-slate-300 rounded-xl text-sm focus:border-brand-ochre focus:ring-2 focus:ring-brand-ochre/20 transition min-h-[46px]">
           </div>
 
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
-            <span class="absolute -top-3.5 left-6 bg-brand-slate text-amber-400 font-extrabold text-xs px-3 py-1 rounded-full border border-slate-700">Schritt 2</span>
-            <h3 class="font-bold text-base text-brand-slate mt-2 mb-2">Verbindliches Festpreisangebot</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Sie erhalten ein transparentes, detailliertes Angebot ohne versteckte Kosten nach VOB und deutschem Handwerksrecht.</p>
+          <!-- DSGVO FORM CONSENT -->
+          <div class="flex items-start gap-2.5 pt-1">
+            <input id="consent" type="checkbox" required class="mt-1 h-4 w-4 rounded border-slate-300 text-brand-ochre focus:ring-brand-ochre">
+            <label for="consent" class="text-xs text-slate-500 leading-normal">
+              Ich stimme der Kontaktaufnahme zur Erstellung eines unverbindlichen Angebots zu. Weitere Informationen in der <button type="button" onclick="openModal('datenschutz-modal')" class="text-brand-ochre underline">Datenschutzerklärung</button>.
+            </label>
           </div>
 
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative">
-            <span class="absolute -top-3.5 left-6 bg-amber-600 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow">Schritt 3</span>
-            <h3 class="font-bold text-base text-brand-slate mt-2 mb-2">Meisterhafte Fertigstellung</h3>
-            <p class="text-xs text-brand-textMuted leading-relaxed">Pünktliche Ausführung durch unser erfahrenes Team mit anschließender gemeinsamer Endabnahme und Garantie.</p>
+          <!-- SUBMIT BUTTON -->
+          <button type="submit" class="tactile-btn w-full bg-brand-ochre hover:bg-brand-ochreHover text-white font-extrabold py-4 px-6 rounded-xl shadow-lg text-base flex items-center justify-center gap-2">
+            <span>Kostenloses Angebot & Termin anfordern</span>
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+
+          <!-- SUCCESS NOTICE -->
+          <div id="calc-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 rounded-xl p-4 text-center text-sm font-semibold">
+            ✅ Vielen Dank! Dachdeckermeister Holger Weiß hat Ihre Anfrage erhalten und meldet sich zeitnah bei Ihnen.
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- LEGAL COMPLIANCE: IMPRESSUM & DATENSCHUTZ (§ 5 DDG & DSGVO) -->
-    <section class="py-14 px-4 max-w-6xl mx-auto border-t border-slate-200 mt-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-xs text-brand-textMuted">
-        
-        <div class="space-y-3">
-          <h3 id="impressum" class="font-heading font-extrabold text-sm text-brand-slate uppercase tracking-wider">Impressum (§ 5 DDG)</h3>
-          <p class="leading-relaxed">
-            <strong>Holger Weiß Dachdeckerbetrieb</strong><br>
-            Inhaber: Holger Weiß (Dachdeckermeister)<br>
-            Miersdorfer Chaussee 10<br>
-            15738 Zeuthen (bei Eichwalde)<br>
-            Telefon: <a href="tel:03034622646" class="text-brand-slate underline font-semibold">030 34 622 646</a><br>
-            Mobil / Notdienst: <a href="tel:01732354958" class="text-brand-slate underline font-semibold">0173 235 49 58</a><br>
-            E-Mail: <a href="mailto:kontakt@dachdecker-hw.de" class="text-brand-slate underline font-semibold">kontakt@dachdecker-hw.de</a>
-          </p>
-          <p class="leading-relaxed">
-            <strong>Zuständige Kammer:</strong> Handwerkskammer Cottbus / Handwerkskammer Berlin.<br>
-            Berufsbezeichnung: Dachdeckermeister (verliehen in der Bundesrepublik Deutschland).
-          </p>
-          <p class="leading-relaxed">
-            <strong>Verbraucherschlichtung:</strong> Wir sind nicht verpflichtet oder bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-          </p>
-        </div>
-
-        <div class="space-y-3">
-          <h3 id="datenschutz" class="font-heading font-extrabold text-sm text-brand-slate uppercase tracking-wider">Datenschutzhinweise (DSGVO)</h3>
-          <p class="leading-relaxed">
-            <strong>1. Datenerhebung & Zweck:</strong> Die Eingaben aus dem Kontaktformular (Name, Telefonnummer, Vorhaben) werden ausschließlich zur Bearbeitung und Beantwortung Ihrer konkreten Anfrage verarbeitet (Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO).
-          </p>
-          <p class="leading-relaxed">
-            <strong>2. Keine Weitergabe an Dritte & kein Tracking:</strong> Es findet keinerlei Datenweitergabe an Werbetreibende statt. Diese Webseite lädt keine Third-Party-Tracking-Skripte oder Cookies von Google Analytics, Meta oder Werbenetzwerken.
-          </p>
-          <p class="leading-relaxed">
-            <strong>3. Ihre Rechte:</strong> Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
-          </p>
-        </div>
+        </form>
 
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-brand-slateDark text-slate-400 py-6 px-4 text-xs border-t border-slate-800">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
-      <span>© 2026 Dachdeckerbetrieb Holger Weiß – Zeuthen & Eichwalde. Alle Rechte vorbehalten.</span>
-      <div class="flex gap-5">
-        <a href="#impressum" class="hover:text-white transition py-1">Impressum</a>
-        <a href="#datenschutz" class="hover:text-white transition py-1">Datenschutz</a>
-        <a href="javascript:void(0)" onclick="document.getElementById('cookie-banner').style.display='block'" class="hover:text-white transition py-1">Cookie-Hinweis</a>
+  <!-- FOOTER & LEGAL -->
+  <footer class="bg-brand-charcoal text-slate-400 text-xs py-12 px-4 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      
+      <div class="space-y-3">
+        <div class="flex items-center gap-2.5">
+          <img src="./logo.jpg" alt="Logo" class="h-8 w-auto object-contain bg-white rounded p-0.5">
+          <span class="font-heading font-extrabold text-white text-base">HOLGER WEISS</span>
+        </div>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Ihr eingetragener Dachdeckermeisterbetrieb in Zeuthen. Höchste Qualität, persönliche Beratung und termintreue Fertigstellung seit 1990.
+        </p>
       </div>
+
+      <div class="space-y-2">
+        <span class="block font-bold text-white uppercase tracking-wider text-[11px]">Standort & Werkstatt</span>
+        <p class="leading-relaxed text-slate-300">
+          Dachdeckerbetrieb Holger Weiß<br>
+          Miersdorfer Chaussee 10<br>
+          15738 Zeuthen
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <span class="block font-bold text-white uppercase tracking-wider text-[11px]">Direktkontakt</span>
+        <p class="leading-relaxed text-slate-300">
+          Telefon: <a href="tel:03034622646" class="hover:text-white underline">030 34 622 646</a><br>
+          Notdienst: <a href="tel:01732354958" class="hover:text-amber-400 underline">0173 235 49 58</a><br>
+          Region: Zeuthen, Eichwalde, Dahme-Spreewald
+        </p>
+      </div>
+
+      <div class="space-y-2">
+        <span class="block font-bold text-white uppercase tracking-wider text-[11px]">Rechtliches</span>
+        <ul class="space-y-1.5">
+          <li><button onclick="openModal('impressum-modal')" class="hover:text-white transition underline">Impressum (§ 5 DDG)</button></li>
+          <li><button onclick="openModal('datenschutz-modal')" class="hover:text-white transition underline">Datenschutzerklärung</button></li>
+          <li><button onclick="openModal('agb-modal')" class="hover:text-white transition underline">Allgemeine Geschäftsbedingungen</button></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 border-t border-slate-800 flex flex-wrap justify-between items-center gap-4 text-[11px] text-slate-500">
+      <span>© 2026 Dachdeckerbetrieb Holger Weiß. Alle Rechte vorbehalten.</span>
+      <span>Handwerkskammer Potsdam • Mitglied der Dachdecker-Innung</span>
     </div>
   </footer>
 
-  <!-- MOBILE STICKY THUMB DOCK (iOS Floating Island Pattern) -->
-  <aside class="sm:hidden fixed bottom-3 left-3 right-3 z-40 bg-slate-900/95 backdrop-blur-xl border border-white/10 p-2 rounded-2xl shadow-2xl flex items-center justify-between gap-2" aria-label="Mobile Schnellkontakt Leiste">
-    <a href="tel:03034622646" class="flex-1 bg-amber-600 hover:bg-amber-700 active:scale-[0.98] text-white font-bold py-3 px-2 rounded-xl text-center text-xs shadow flex items-center justify-center gap-1.5 transition min-h-[48px]">
-      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-      <span>030 Anrufen</span>
+  <!-- MOBILE STICKY QUICK ACTION BAR -->
+  <aside class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center justify-between gap-2 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+    <a href="tel:03034622646" class="tactile-btn flex-1 bg-slate-900 text-white font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-1.5 min-h-[48px]">
+      <svg class="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      <span>Anrufen</span>
     </a>
-    <a href="https://wa.me/491732354958?text=Hallo%20Herr%20Weiß,%20ich%20habe%20eine%20Dachanfrage." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white font-bold py-3 px-2 rounded-xl text-center text-xs shadow flex items-center justify-center gap-1.5 transition min-h-[48px]">
-      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <a href="https://wa.me/491732354958?text=Hallo%20Herr%20Weiß,%20ich%20interessiere%20mich%20für%20eine%20Dachberatung." target="_blank" rel="noopener noreferrer" class="tactile-btn flex-1 bg-emerald-600 text-white font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-1.5 min-h-[48px]">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
       <span>WhatsApp</span>
     </a>
-    <a href="#kontakt" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-3.5 rounded-xl text-center text-xs shadow flex items-center justify-center transition min-h-[48px]" aria-label="Zum Anfrageformular">
-      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+    <a href="#kalkulator" class="tactile-btn flex-1 bg-brand-ochre text-white font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center min-h-[48px]">
+      <span>Angebot</span>
     </a>
   </aside>
 
-  <!-- NON-BLOCKING COOKIE TOAST -->
-  <div id="cookie-banner" class="fixed bottom-24 sm:bottom-4 right-4 left-4 sm:left-auto sm:max-w-xs bg-white border border-slate-200 rounded-2xl p-4 shadow-xl z-50 text-xs">
-    <div class="flex items-center justify-between gap-2 mb-1.5">
-      <span class="font-heading font-bold text-slate-900">Datenschutz & Cookies</span>
-      <span class="text-emerald-600 text-xs font-semibold">100% Tracking-frei</span>
+  <!-- COOKIE CONSENT BANNER -->
+  <aside id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md z-50 bg-white border border-slate-200 rounded-2xl p-5 shadow-2xl space-y-3">
+    <div class="flex items-start justify-between gap-3">
+      <div class="space-y-1">
+        <span class="block font-bold text-slate-900 text-sm">Privatsphäre & Cookies</span>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          Diese Website nutzt ausschließlich technisch notwendige Cookies zur Bereitstellung der Funktionen. Es findet kein Werbe-Tracking statt.
+        </p>
+      </div>
     </div>
-    <p class="text-[11px] text-slate-500 mb-3 leading-relaxed">Wir verwenden nur technisch essenzielle Cookies (keine Werbe- oder Tracking-Cookies).</p>
-    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="w-full bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold py-2 rounded-xl text-xs min-h-[38px] transition cursor-pointer">
-      Einverstanden
-    </button>
+    <div class="flex items-center gap-2 pt-1">
+      <button onclick="acceptCookies()" class="tactile-btn flex-1 bg-brand-charcoal text-white text-xs font-bold py-2 rounded-lg">Einverstanden</button>
+      <button onclick="openModal('datenschutz-modal')" class="text-xs text-slate-500 hover:text-slate-800 px-3">Details</button>
+    </div>
+  </aside>
+
+  <!-- IMPRESSUM MODAL (§ 5 DDG) -->
+  <div id="impressum-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 space-y-4 max-h-[85vh] overflow-y-auto border border-slate-200 shadow-2xl">
+      <div class="flex justify-between items-center border-b pb-3">
+        <h3 class="text-lg font-bold text-brand-charcoal">Impressum nach § 5 DDG</h3>
+        <button onclick="closeModal('impressum-modal')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">✕</button>
+      </div>
+      <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+        <p><strong>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</strong><br>
+        Dachdeckerbetrieb Holger Weiß<br>
+        Inhaber: Holger Weiß (Dachdeckermeister)<br>
+        Miersdorfer Chaussee 10<br>
+        15738 Zeuthen</p>
+        <p><strong>Kontakt:</strong><br>
+        Telefon: 030 34 622 646<br>
+        Mobil / Notdienst: 0173 235 49 58<br>
+        E-Mail: info@dachdecker-hw.de</p>
+        <p><strong>Zuständige Kammer:</strong><br>
+        Handwerkskammer Potsdam<br>
+        Charlottenstraße 34-36, 14467 Potsdam<br>
+        Berufsbezeichnung: Dachdeckermeister (verliehen in Deutschland)</p>
+      </div>
+      <div class="pt-3 border-t text-right">
+        <button onclick="closeModal('impressum-modal')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-4 py-2 rounded-lg">Schließen</button>
+      </div>
+    </div>
   </div>
+
+  <!-- DATENSCHUTZ MODAL (DSGVO) -->
+  <div id="datenschutz-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 space-y-4 max-h-[85vh] overflow-y-auto border border-slate-200 shadow-2xl">
+      <div class="flex justify-between items-center border-b pb-3">
+        <h3 class="text-lg font-bold text-brand-charcoal">Datenschutzerklärung (DSGVO)</h3>
+        <button onclick="closeModal('datenschutz-modal')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">✕</button>
+      </div>
+      <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+        <p><strong>1. Datenschutz auf einen Blick:</strong> Wir erheben personenbezogene Daten (Name, Telefonnummer) ausschließlich zweckgebunden zur Bearbeitung Ihrer Angebotsanfrage (Art. 6 Abs. 1 lit. b DSGVO).</p>
+        <p><strong>2. Keine Weitergabe:</strong> Ihre Daten werden vertraulich behandelt und keinesfalls an unbefugte Dritte weitergegeben.</p>
+        <p><strong>3. Ihre Rechte:</strong> Sie haben jederzeit das Recht auf Auskunft, Berichtigung und Löschung Ihrer gespeicherten Daten.</p>
+      </div>
+      <div class="pt-3 border-t text-right">
+        <button onclick="closeModal('datenschutz-modal')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-4 py-2 rounded-lg">Schließen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AGB MODAL -->
+  <div id="agb-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 space-y-4 max-h-[85vh] overflow-y-auto border border-slate-200 shadow-2xl">
+      <div class="flex justify-between items-center border-b pb-3">
+        <h3 class="text-lg font-bold text-brand-charcoal">Allgemeine Geschäftsbedingungen</h3>
+        <button onclick="closeModal('agb-modal')" class="text-slate-400 hover:text-slate-700 text-xl font-bold">✕</button>
+      </div>
+      <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+        <p>Für alle handwerklichen Leistungen gelten die Vergabe- und Vertragsordnung für Bauleistungen (VOB/B) sowie ergänzend die Bestimmungen des Bürgerlichen Gesetzbuches (BGB).</p>
+      </div>
+      <div class="pt-3 border-t text-right">
+        <button onclick="closeModal('agb-modal')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-4 py-2 rounded-lg">Schließen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT FOR COOKIES & MODALS -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+    function acceptCookies() {
+      localStorage.setItem('cookie_consent', 'accepted');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+    if (localStorage.getItem('cookie_consent') === 'accepted') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
 
 </body>
 </html>
