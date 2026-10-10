@@ -30,7 +30,22 @@
     }
   </script>
   <style>
-    /* WCAG Accessibility Outline Focus */
+    /* 1. Mobile UX: Remove horizontal scrolling */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      position: relative;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /* 2. Mobile UX: Stop text overflow */
+    p, h1, h2, h3, h4, span, a, label {
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    /* 3. WCAG Accessibility Outline Focus */
     :focus-visible {
       outline: 3px solid #D97706;
       outline-offset: 2px;
@@ -38,20 +53,24 @@
     /* Skip Link for Screen Readers */
     .skip-link {
       position: absolute;
-      top: -40px;
+      top: -50px;
       left: 0;
       background: #D97706;
       color: white;
-      padding: 8px 16px;
+      padding: 10px 18px;
       z-index: 100;
       transition: top 0.2s;
     }
     .skip-link:focus {
       top: 0;
     }
+    /* Prevent iOS auto-zoom on input focus */
+    input, textarea, select {
+      font-size: 16px !important;
+    }
   </style>
 </head>
-<body class="bg-brand-lightBg text-brand-textMain font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-brand-lightBg text-brand-textMain font-sans antialiased flex flex-col min-h-screen pb-20 sm:pb-0">
 
   <!-- Accessibility: Skip Link -->
   <a href="#main-content" class="skip-link font-medium">Zum Hauptinhalt springen</a>
@@ -360,8 +379,21 @@
     </div>
   </footer>
 
-  <!-- DSGVO COOKIE BANNER (Technisch notwendig, kein Third-Party-Tracking) -->
-  <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-md bg-white border border-slate-300 rounded-xl p-4 shadow-2xl z-50 text-xs text-slate-700">
+  <!-- MOBILE STICKY THUMB ACTION BAR (Buttons in thumb reach - Mobile UX) -->
+  <aside class="sm:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 flex items-center justify-between gap-2 shadow-[0_-4px_16px_rgba(0,0,0,0.08)]" aria-label="Schnellkontakt Leiste">
+    <a href="tel:03034622646" class="flex-1 bg-amber-600 hover:bg-amber-700 active:scale-[0.98] text-white font-bold py-3 px-1 rounded-xl text-center text-xs shadow flex items-center justify-center gap-1 transition min-h-[48px]">
+      📞 030 Anrufen
+    </a>
+    <a href="tel:01732354958" class="flex-1 bg-slate-900 hover:bg-slate-800 active:scale-[0.98] text-white font-bold py-3 px-1 rounded-xl text-center text-xs shadow flex items-center justify-center gap-1 transition min-h-[48px]">
+      🚨 Notdienst
+    </a>
+    <a href="https://wa.me/491732354958?text=Hallo%20Herr%20Weiß,%20ich%20habe%20eine%20Dachanfrage." target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 hover:bg-emerald-700 active:scale-[0.98] text-white font-bold py-3 px-1 rounded-xl text-center text-xs shadow flex items-center justify-center gap-1 transition min-h-[48px]">
+      💬 WhatsApp
+    </a>
+  </aside>
+
+  <!-- DSGVO COOKIE BANNER (Non-blocking, does not cover whole screen) -->
+  <div id="cookie-banner" class="fixed bottom-20 sm:bottom-4 left-4 right-4 md:left-auto md:right-4 md:max-w-md bg-white border border-slate-300 rounded-xl p-4 shadow-2xl z-50 text-xs text-slate-700">
     <div class="flex items-start gap-3">
       <div class="text-xl">🍪</div>
       <div>
@@ -370,10 +402,10 @@
           Diese Website verwendet ausschließlich technisch notwendige Cookies, um die Basisfunktionen bereitzustellen. Es werden keine Third-Party Tracking- oder Werbe-Cookies geladen.
         </p>
         <div class="flex gap-2">
-          <button onclick="document.getElementById('cookie-banner').classList.add('hidden')" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-3 py-1.5 rounded text-xs transition">
+          <button onclick="document.getElementById('cookie-banner').classList.add('hidden')" class="bg-amber-600 hover:bg-amber-700 active:scale-95 text-white font-bold px-3 py-1.5 rounded text-xs transition min-h-[36px]">
             Essenzielle akzeptieren
           </button>
-          <a href="#datenschutz" class="px-3 py-1.5 text-slate-500 hover:text-slate-800 text-xs transition">
+          <a href="#datenschutz" class="px-3 py-1.5 text-slate-500 hover:text-slate-800 text-xs transition min-h-[36px] inline-flex items-center">
             Mehr Details
           </a>
         </div>
